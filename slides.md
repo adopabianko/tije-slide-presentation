@@ -44,7 +44,7 @@ layout: intro
 
 ### Part 1: The Why
 
-- Masalah yang kita hadapi saat ini
+- Masalah yang sering terjadi
 - Mengapa perlu standarisasi?
 - Apa itu Clean Architecture?
 
@@ -332,9 +332,9 @@ layout: default
 </div>
 
 <div class="text-center p-3 rounded-xl bg-green-500 bg-opacity-5 border border-green-500 border-opacity-20 hover:border-opacity-50 transition-all">
-  <div class="text-2xl mb-1">📡</div>
-  <h3 class="font-bold">gRPC</h3>
-  <p class="text-xs opacity-70 mt-1">Inter-service Comm</p>
+  <div class="text-2xl mb-1">📦</div>
+  <h3 class="font-bold">MinIO</h3>
+  <p class="text-xs opacity-70 mt-1">Object Storage</p>
 </div>
 
 <div class="text-center p-3 rounded-xl bg-yellow-500 bg-opacity-5 border border-yellow-500 border-opacity-20 hover:border-opacity-50 transition-all">
@@ -349,7 +349,7 @@ layout: default
 layout: default
 ---
 
-# Directory Structure — Bird's Eye View
+# Directory Structure
 
 <div class="grid grid-cols-2 gap-6 pt-1">
 
@@ -827,7 +827,7 @@ layout: default
 <div class="p-4 rounded-xl bg-gradient-to-br from-yellow-500/10 to-amber-500/10 border border-yellow-500/30">
   <div class="text-xl mb-1">🐳</div>
   <h3 class="font-bold text-sm !my-0">Docker Ready</h3>
-  <p class="text-xs opacity-70 mt-1 !my-0">Full Docker Compose. <code>make docker-up</code> dan siap.</p>
+  <p class="text-xs opacity-70 mt-1 !my-0">Full Docker Compose. <code>make run-local</code> dan siap.</p>
 </div>
 
 <div class="p-4 rounded-xl bg-gradient-to-br from-teal-500/10 to-cyan-500/10 border border-teal-500/30">
@@ -1052,7 +1052,7 @@ timeline
 layout: default
 ---
 
-# Key Takeaways
+# Point Penting
 
 <div class="grid grid-cols-3 gap-6 pt-8 max-w-4xl mx-auto">
 
@@ -1084,14 +1084,17 @@ background: https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920
 
 # Thank You
 
-<div class="pt-4 text-xl opacity-80">
-  Let's build better services, together.
-</div>
-
-<div class="pt-8">
-  <span class="px-6 py-3 rounded-full bg-white bg-opacity-10 backdrop-blur-sm text-lg font-medium">
-    Q & A
-  </span>
+<div class="pt-8 flex justify-center">
+  <div class="relative inline-block">
+    <img
+      src="/steve-rhoma.png"
+      alt="Steve Rhoma thinking pose"
+      class="w-56 md:w-64 rounded-2xl border border-white/30 shadow-2xl"
+    />
+    <span class="absolute left-[32%] -translate-x-1/2 bottom-10 px-4 py-1.5 rounded-full bg-black/50 backdrop-blur-sm text-base font-semibold tracking-wide">
+      Q&A
+    </span>
+  </div>
 </div>
 
 <div class="abs-br m-6 text-sm opacity-50">
