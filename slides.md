@@ -18,7 +18,7 @@ mdc: true
 
 <div class="pt-6">
   <span class="px-4 py-2 rounded-full bg-white bg-opacity-20 text-sm font-medium backdrop-blur-sm">
-    Kelas TJempolan - Tech Talk
+    Kelas TJempolan - 16 April 2026
   </span>
 </div>
 
@@ -33,6 +33,7 @@ Kita akan membahas bagaimana kita bisa menstandarkan Go services kita menggunaka
 -->
 
 ---
+
 layout: intro
 ---
 
@@ -66,8 +67,9 @@ layout: intro
 <br>
 
 ---
+
 layout: section
-background: https://awsimages.detik.net.id/community/media/visual/2025/04/29/ilustrasi-transjakarta-1745903314872_169.jpeg?w=1200
+background: <https://awsimages.detik.net.id/community/media/visual/2025/04/29/ilustrasi-transjakarta-1745903314872_169.jpeg?w=1200>
 ---
 
 # Part 1
@@ -75,6 +77,7 @@ background: https://awsimages.detik.net.id/community/media/visual/2025/04/29/ilu
 ## The Problem
 
 ---
+
 layout: default
 ---
 
@@ -128,6 +131,7 @@ Setiap engineer punya preferensi sendiri. Ketika masuk ke service orang lain, bu
 -->
 
 ---
+
 layout: default
 ---
 
@@ -170,8 +174,9 @@ layout: default
 </div>
 
 ---
+
 layout: section
-background: https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1920
+background: <https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1920>
 ---
 
 # Part 2
@@ -179,6 +184,7 @@ background: https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1920
 ## Clean Architecture
 
 ---
+
 layout: two-cols
 layoutClass: gap-8
 ---
@@ -227,6 +233,7 @@ graph TB
 </div>
 
 ---
+
 layout: default
 ---
 
@@ -279,8 +286,9 @@ flowchart LR
 </div>
 
 ---
+
 layout: section
-background: https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?w=1920
+background: <https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?w=1920>
 ---
 
 # Part 3
@@ -288,6 +296,7 @@ background: https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?w=1920
 ## The Boilerplate — Syntra Backend
 
 ---
+
 layout: default
 ---
 
@@ -346,6 +355,7 @@ layout: default
 </div>
 
 ---
+
 layout: default
 ---
 
@@ -419,6 +429,7 @@ syntra-backend/
 </div>
 
 ---
+
 layout: default
 ---
 
@@ -458,6 +469,7 @@ func (u *User) IsActive() bool {
 </div>
 
 ---
+
 layout: default
 ---
 
@@ -514,6 +526,7 @@ func (r *userRepository) FindByID(
 </div>
 
 ---
+
 layout: default
 ---
 
@@ -575,6 +588,7 @@ func (uc *userUseCase) Register(
 </div>
 
 ---
+
 layout: default
 ---
 
@@ -603,6 +617,7 @@ func (h *UserHandler) Register(c *gin.Context) {
 ```
 
 ---
+
 layout: default
 ---
 
@@ -695,6 +710,7 @@ sequenceDiagram
 ```
 
 ---
+
 layout: default
 ---
 
@@ -730,6 +746,7 @@ func NewContainer(cfg *config.Config) *Container {
 </div>
 
 ---
+
 layout: two-cols
 layoutClass: gap-8
 ---
@@ -793,6 +810,7 @@ test/
 </div>
 
 ---
+
 layout: default
 ---
 
@@ -839,16 +857,17 @@ layout: default
 </div>
 
 ---
+
 layout: default
 ---
 
 # Quick Start — 5 Minutes to Running Service
 
-<div class="flex items-center gap-3 px-4 py-2 rounded-lg bg-slate-500 bg-opacity-10"><div class="w-7 h-7 rounded-full bg-blue-500 bg-opacity-20 flex items-center justify-center font-bold text-blue-400 text-xs shrink-0">1</div><div class="flex-1"><code class="!text-xs">git clone boilerplate-repo my-new-service</code><p class="!text-[10px] opacity-60 !my-0">Clone boilerplate sebagai base</p></div></div>
+<div class="flex items-center gap-3 px-4 py-2 rounded-lg bg-slate-500 bg-opacity-10"><div class="w-7 h-7 rounded-full bg-blue-500 bg-opacity-20 flex items-center justify-center font-bold text-blue-400 text-xs shrink-0">1</div><div class="flex-1"><code class="!text-xs">git clone https://repo.transjakarta.co.id/smpob/ragoenan my-new-service</code><p class="!text-[10px] opacity-60 !my-0">Clone boilerplate sebagai base</p></div></div>
 
 <div class="flex items-center gap-3 px-4 py-2 rounded-lg bg-slate-500 bg-opacity-10"><div class="w-7 h-7 rounded-full bg-green-500 bg-opacity-20 flex items-center justify-center font-bold text-green-400 text-xs shrink-0">2</div><div class="flex-1"><code class="!text-xs">cp .env.example .env</code><p class="!text-[10px] opacity-60 !my-0">Configure environment variables</p></div></div>
 
-<div class="flex items-center gap-3 px-4 py-2 rounded-lg bg-slate-500 bg-opacity-10"><div class="w-7 h-7 rounded-full bg-yellow-500 bg-opacity-20 flex items-center justify-center font-bold text-yellow-400 text-xs shrink-0">3</div><div class="flex-1"><code class="!text-xs">make docker-up</code><p class="!text-[10px] opacity-60 !my-0">Start PostgreSQL, Redis, RabbitMQ, Minio</p></div></div>
+<div class="flex items-center gap-3 px-4 py-2 rounded-lg bg-slate-500 bg-opacity-10"><div class="w-7 h-7 rounded-full bg-yellow-500 bg-opacity-20 flex items-center justify-center font-bold text-yellow-400 text-xs shrink-0">3</div><div class="flex-1"><code class="!text-xs">make run-local</code><p class="!text-[10px] opacity-60 !my-0">Start PostgreSQL, Redis, RabbitMQ, Minio</p></div></div>
 
 <div class="flex items-center gap-3 px-4 py-2 rounded-lg bg-slate-500 bg-opacity-10"><div class="w-7 h-7 rounded-full bg-orange-500 bg-opacity-20 flex items-center justify-center font-bold text-orange-400 text-xs shrink-0">4</div><div class="flex-1"><code class="!text-xs">make cert</code><p class="!text-[10px] opacity-60 !my-0">Generate RSA keys for JWT</p></div></div>
 
@@ -857,8 +876,9 @@ layout: default
 <div class="mt-1 px-4 py-2 rounded-lg bg-green-500 bg-opacity-10 border border-green-500 border-opacity-30 text-center text-xs">Server running at <code>localhost:8080</code> — Swagger at <code>/swagger/index.html</code></div>
 
 ---
+
 layout: section
-background: https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=1920
+background: <https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=1920>
 ---
 
 # Part 4
@@ -866,6 +886,7 @@ background: https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=1920
 ## Adding a New Feature
 
 ---
+
 layout: default
 ---
 
@@ -955,6 +976,7 @@ graph TD
 </div>
 
 ---
+
 layout: two-cols
 layoutClass: gap-8
 ---
@@ -1006,6 +1028,7 @@ layoutClass: gap-8
 </div>
 
 ---
+
 layout: default
 ---
 
@@ -1049,6 +1072,7 @@ timeline
 </div>
 
 ---
+
 layout: default
 ---
 
@@ -1077,9 +1101,10 @@ layout: default
 </div>
 
 ---
+
 layout: center
 class: text-center
-background: https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920
+background: <https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920>
 ---
 
 # Thank You
